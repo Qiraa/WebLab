@@ -1,0 +1,121 @@
+.comments-card {
+    background: linear-gradient(180deg, rgb(103, 195, 243) 0%, rgb(90, 152, 242) 100%);
+    border-radius: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+    font-family: "Mulish-Regular", Helvetica;
+}
+
+.comments-card .title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 48px;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.comments-card .separator-line {
+    background-color: #ffffff;
+    border-radius: 6px;
+    height: 2px;
+    width: 56px;
+    align-self: center;
+}
+
+.comments-card .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments-card .author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.comments-card .author .avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: none;
+}
+
+.comments-card .author .who {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comments-card .author .who .name {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 48px;
+    white-space: nowrap;
+}
+
+.comments-card .author .who .position {
+    color: #ffffffd9;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 48px;
+    white-space: nowrap;
+}
+
+.comments-card .comment {
+    color: #ffffffe6;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: start;
+}
+
+.comments-arrows {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.comments-arrows .enabled {
+    opacity: 1;
+}
+
+.comments-arrows .disabled {
+    opacity: 0.5;
+}
+
+.comments-arrows .point-unselected {
+    width: 10px;
+    height: 10px;
+    background-color: #5B9BF3;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.comments-arrows .point-selected{
+    width: 10px;
+    height: 10px;
+    background-color: #5B9BF3;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+}

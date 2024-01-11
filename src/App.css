@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  --drop-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.services-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
+  row-gap: 5%;
+}

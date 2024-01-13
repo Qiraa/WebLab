@@ -1,17 +1,40 @@
 .articles-block {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    text-align: start;
+    align-items: center;
 }
 
-.articles-block .cards {
+.articles-block .articles-block-title {
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Mulish-Bold";
+    letter-spacing: 0;
+    line-height: 48px;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.articles-block .articles-separator-line {
+    background-color: #000000;
+    border-radius: 6px;
+    height: 2px;
+    width: 56px;
+    align-self: center;
+    margin-top: 26px;
+}
+
+.articles-block .articles-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5%;
     row-gap: 5%;
+    margin-top: 72px;
+    margin-bottom: 64px;
 }
 
-.cards .card {
+.articles-cards .article-card {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 40px 40px 50px rgba(229,233,246,0.8);
@@ -22,65 +45,43 @@
     gap: 20px;
 }
 
-.cards .image {
+.article-card .article-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 100%;
 }
 
-.cards .title {
+.article-card .article-title {
+    font-family: "Mulish-Bold";
     color: #000000;
-    font-family: "Mulish-Bold", Helvetica;
+    font-weight: bold;
     font-size: 21px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 32px;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.cards .description {
+.article-card .article-description {
+    font-family: "Mulish-Light";
     color: #7c7987;
-    font-family: "Mulish-Light", Helvetica;
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 0;
-    line-height: 28px;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.cards .read-more {
+.article-card .article-read-more {
+    font-family: "Mulish-SemiBold";
     color: #3f88ed;
-    font-family: "Mulish-SemiBold", Helvetica;
     font-size: 17px;
     font-weight: 600;
-    line-height: 28px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: row;
     gap: 16px;
-}
-
-.articles-view-all {
-    border: 1.4px solid;
-    border-color: #458ff6;
-    color: #458ff6;
-    border-radius: 55px;
-    font-family: "Mulish-Bold", Helvetica;
-    font-size: 18px;
-    line-height: 40px;
-    align-self: center;
-    width: 15%;
-}
-
-.articles-view-all:hover {
-    border: 1px solid transparent;
-    background-color: #458FF6;
-    color: #fff
+    outline: none;
 }

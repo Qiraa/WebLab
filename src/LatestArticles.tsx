@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./LatestArticles.css";
+import "./Common.css";
+
+const DEFAULT_ITEMS_COUNT = 3;
 
 export class Article {
     imagePath: string;
@@ -22,28 +25,31 @@ export function LatestArticles(
 ) {
     const [showAll, setShowAll] = useState(false);
 
-    let articlesToShow = showAll ? state.articles : state.articles.slice(0, 3)
-
     return (
         <div className="articles-block">
-            <div className="cards">
+            <div className="articles-block-title">
+                Check out our latest article
+            </div>
+            <div className="articles-separator-line"/>
+            <div className="articles-cards">
                 {
-                    articlesToShow.map((article) => (
-                        <div className="card">
-                            <img className="image" src={article.imagePath}/>
-                            <div className="title">{article.title}</div>
-                            <div className="description">{article.description}</div>
-                            <div className="read-more">
-                                <div>Read more</div>
-                                <img src="view_all_arrow.svg"/>
+                    (showAll ? state.articles : state.articles.slice(0, DEFAULT_ITEMS_COUNT))
+                        .map((article) => (
+                            <div className="article-card">
+                                <img className="article-image" src={article.imagePath}/>
+                                <div className="article-title">{article.title}</div>
+                                <div className="article-description">{article.description}</div>
+                                <div className="article-read-more">
+                                    <div>Read more</div>
+                                    <img width="15px" src="view_all_arrow.svg"/>
+                                </div>
                             </div>
-                        </div>
-                    ))
+                        ))
                 }
             </div>
             <button 
                 onClick={() => setShowAll(!showAll)}
-                className="articles-view-all">
+                className="outlined-button">
                 {
                     showAll ? "Hide" : "View all"
                 }

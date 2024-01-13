@@ -26,28 +26,28 @@ export function Comments(
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-        <div>
+        <div className="comments-block">
             <div className="comments-card">
-                <div className="title">
+                <div className="comments-title">
                     What our customer are saying
                 </div>
-                <div className="separator-line"/>
-                <div className="row">
-                    <div className="author">
-                        <img className="avatar" src={state.comments[currentIndex].authorImagePath}/>
-                        <div className="who">
-                            <div className="name">{state.comments[currentIndex].authorName}</div>
-                            <div className="position">{state.comments[currentIndex].authorPosition}</div>
+                <div className="comments-separator-line"/>
+                <div className="comments-row">
+                    <div className="comment-author">
+                        <img className="comment-author-avatar" src={state.comments[currentIndex].authorImagePath}/>
+                        <div className="comment-who">
+                            <div className="comment-author-name">{state.comments[currentIndex].authorName}</div>
+                            <div className="comment-author-position">{state.comments[currentIndex].authorPosition}</div>
                         </div>
                     </div>
-                    <div className="comment">
+                    <div className="comment-text">
                         {state.comments[currentIndex].comment}
                     </div>
                 </div>
             </div>
-            <div className="comments-arrows">
+            <div className="comments-arrow">
                 <img src="arrow_left.svg" 
-                    className={currentIndex == 0 ? "disabled" : "enabled"} 
+                    className={currentIndex == 0 ? "comment-arrow-disabled" : "comment-arrow-enabled"} 
                     onClick={
                         () => {
                             if (currentIndex > 0) {
@@ -58,11 +58,14 @@ export function Comments(
                 />
                 {
                     state.comments.map((_, index) => (
-                        <div className={index == currentIndex ? "point-selected" : "point-unselected"}/>
+                        <div
+                         className={index == currentIndex ? "comment-point-selected" : "comment-point-unselected"}
+                         onClick={() => setCurrentIndex(index)}
+                         />
                     ))
                 }
                 <img src="arrow_right.svg" 
-                    className={currentIndex == state.comments.length - 1 ? "disabled" : "enabled"}
+                    className={currentIndex == state.comments.length - 1 ? "comment-arrow-disabled" : "comment-arrow-enabled"}
                     onClick={
                         () => {
                             if (currentIndex < state.comments.length - 1) {

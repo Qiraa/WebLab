@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.header .header-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header-menu .header-menu-selected-item {
+    font-family: "Mulish-Bold";
+    color: #1f1534;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-menu .header-menu-unselected-item {
+    font-family: "Mulish-Regular";
+    color: #1f1534;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.header-menu-unselected-item:hover {
+    opacity: 1;
+}

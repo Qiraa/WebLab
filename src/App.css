@@ -8,9 +8,20 @@
   gap: 100px;
 }
 
-.services-block {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5%;
-  row-gap: 5%;
+@font-face {
+  font-family: "Mulish-Regular";
+  src: local("Mulish-Regular"),
+    url("./fonts/Mulish/Mulish-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mulish-Bold";
+  src: local("Mulish-Bold"),
+    url("./fonts/Mulish/Mulish-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mulish-Light";
+  src: local("Mulish-Light"),
+    url("./fonts/Mulish/Mulish-Light.ttf") format("truetype");
 }

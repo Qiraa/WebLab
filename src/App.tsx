@@ -1,37 +1,60 @@
 import './App.css'
+
+import './fonts/Mulish/Mulish-Regular.ttf'
+import './fonts/Mulish/Mulish-Bold.ttf'
+import './fonts/Mulish/Mulish-Light.ttf'
+
 import { Comments, Comment }  from './Comments'
+import Consult from './Consult'
 import { Article, LatestArticles } from './LatestArticles'
-import ServiceCard from './ServiceCard'
+import LeadingProviders from './LeadingProviders'
+import Services, { Service } from './Services'
+import Download from './Download'
+import Header from './Header'
 
 function App() {
   return (
     <>
-    <div className="services-block">
-      <ServiceCard
-        imagePath="search.svg"
-        title="Search doctor" 
-        description="Choose your doctor from thousands of specialist, general, and trusted hospitals"/>
-      <ServiceCard
-        imagePath="search.svg"
-        title="Search doctor" 
-        description="Choose your doctor from thousands of specialist, general, and trusted hospitals"/>
-      <ServiceCard
-        imagePath="search.svg"
-        title="Search doctor" 
-        description="Choose your doctor from thousands of specialist, general, and trusted hospitals"/>
-      <ServiceCard
-        imagePath="search.svg"
-        title="Search doctor" 
-        description="Choose your doctor from thousands of specialist, general, and trusted hospitals"/>
-      <ServiceCard
-        imagePath="search.svg"
-        title="Search doctor" 
-        description="Choose your doctor from thousands of specialist, general, and trusted hospitals"/>
-      <ServiceCard
-        imagePath="search.svg"
-        title="Search doctor" 
-        description="Choose your doctor from thousands of specialist, general, and trusted hospitals"/>
-    </div>
+    <Header/>
+    <Consult/>
+    <Services
+      services={
+        [
+          new Service(
+            "search.svg",
+            "Search doctor", 
+            "Choose your doctor from thousands of specialist, general, and trusted hospitals"
+          ),
+          new Service(
+            "online_pharmacy.svg",
+            "Online pharmacy",
+            "Buy  your medicines with our mobile application with a simple delivery system"
+          ),
+          new Service(
+            "consultation.svg",
+            "Consultation" ,
+            "Free consultation with our trusted doctors and get the best recomendations"
+          ),
+          new Service(
+            "details.svg",
+            "Details info",
+            "Free consultation with our trusted doctors and get the best recomendations",
+          ),
+          new Service(
+            "emergency_care.svg",
+            "Emergency care",
+            "You can get 24/7 urgent care for yourself or your children and your lovely family"
+          ),
+          new Service(
+            "tracking.svg",
+            "Tracking",
+            "Track and save your medical history and health data"
+          )
+        ]
+      }
+    />
+    <LeadingProviders/>
+    <Download/>
     <Comments comments={
       [
         new Comment(
@@ -75,29 +98,29 @@ function App() {
           "In this case, the role of the health laboratory is very important to do a disease detection..."
         ),
         new Article(
-          "article1.png",
-          "Disease detection, check up in the laboratory",
-          "In this case, the role of the health laboratory is very important to do a disease detection..."
+          "article2.png",
+          "Herbal medicines that are safe for consumption",
+          "Herbal medicine is very widely used at this time because of its very good for your health..."
+        ),
+        new Article(
+          "article3.png",
+          "Natural care for healthy facial skin",
+          "A healthy lifestyle should start from now and also for your skin health. There are some..."
         ),
         new Article(
           "article1.png",
           "Disease detection, check up in the laboratory",
+          "Herbal medicine is very widely used at this time because of its very good for your health..."
+        ),
+        new Article(
+          "article2.png",
+          "Herbal medicines that are safe for consumption",
           "In this case, the role of the health laboratory is very important to do a disease detection..."
         ),
         new Article(
-          "article1.png",
-          "Disease detection, check up in the laboratory",
-          "In this case, the role of the health laboratory is very important to do a disease detection..."
-        ),
-        new Article(
-          "article1.png",
-          "Disease detection, check up in the laboratory",
-          "In this case, the role of the health laboratory is very important to do a disease detection..."
-        ),
-        new Article(
-          "article1.png",
-          "Disease detection, check up in the laboratory",
-          "In this case, the role of the health laboratory is very important to do a disease detection..."
+          "article3.png",
+          "Natural care for healthy facial skin",
+          "A healthy lifestyle should start from now and also for your skin health. There are some..."
         ),
       ]
     }/>

@@ -1,4 +1,8 @@
-.comments-card {
+.comments-block {
+    font-family: "Mulish-Regular";
+}
+
+.comments-block .comments-card {
     background: linear-gradient(180deg, rgb(103, 195, 243) 0%, rgb(90, 152, 242) 100%);
     border-radius: 24px;
     padding-left: 120px;
@@ -10,10 +14,10 @@
     align-items: stretch;
     justify-content: center;
     gap: 25px;
-    font-family: "Mulish-Regular", Helvetica;
 }
 
-.comments-card .title {
+.comments-card .comments-title {
+    font-family: "Mulish-Bold";
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
@@ -23,7 +27,7 @@
     align-self: center;
 }
 
-.comments-card .separator-line {
+.comments-card .comments-separator-line {
     background-color: #ffffff;
     border-radius: 6px;
     height: 2px;
@@ -31,7 +35,7 @@
     align-self: center;
 }
 
-.comments-card .row {
+.comments-card .comments-row {
     display: flex;
     flex-direction: row;
     gap: 10%;
@@ -39,27 +43,28 @@
     justify-content: space-between;
 }
 
-.comments-card .author {
+.comments-card .comment-author {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 24px;
 }
 
-.comments-card .author .avatar {
+.comments-card .comment-author .comment-author-avatar {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     object-fit: none;
 }
 
-.comments-card .author .who {
+.comments-card .comment-author .comment-who {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.comments-card .author .who .name {
+.comments-card .comment-author .comment-who .comment-author-name {
+    font-family: "Mulish-Bold";
     color: #ffffff;
     font-size: 21px;
     font-weight: 400;
@@ -68,7 +73,7 @@
     white-space: nowrap;
 }
 
-.comments-card .author .who .position {
+.comments-card .comment-author .comment-who .comment-author-position {
     color: #ffffffd9;
     font-size: 18px;
     font-weight: 400;
@@ -77,7 +82,7 @@
     white-space: nowrap;
 }
 
-.comments-card .comment {
+.comments-card .comment-text {
     color: #ffffffe6;
     font-size: 19px;
     font-weight: 400;
@@ -86,7 +91,7 @@
     text-align: start;
 }
 
-.comments-arrows {
+.comments-block .comments-arrow {
     margin-top: 42px;
     display: flex;
     justify-content: center;
@@ -94,24 +99,29 @@
     gap: 90px;
 }
 
-.comments-arrows .enabled {
+.comments-block .comments-arrow .comment-arrow-enabled {
     opacity: 1;
 }
 
-.comments-arrows .disabled {
+.comments-block .comments-arrow .comment-arrow-disabled {
     opacity: 0.5;
 }
 
-.comments-arrows .point-unselected {
+.comments-block .comment-point-unselected {
     width: 10px;
     height: 10px;
     background-color: #5B9BF3;
     border-radius: 50%;
     display: inline-block;
     opacity: 0.5;
+    transition: all 500ms;
 }
 
-.comments-arrows .point-selected{
+.comments-block .comment-point-unselected:hover {
+    opacity: 1;
+}
+
+.comments-block .comment-point-selected {
     width: 10px;
     height: 10px;
     background-color: #5B9BF3;

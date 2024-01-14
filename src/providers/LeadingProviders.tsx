@@ -1,5 +1,5 @@
 import "./LeadingProviders.css"
-import "./Common.css"
+import "../Common.css"
 
 export default function LeadingProviders() {
     return (

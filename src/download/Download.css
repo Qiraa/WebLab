@@ -1,0 +1,53 @@
+.download-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("common_decoration.svg");
+    background-repeat: no-repeat;
+    background-position: top right -3%;
+    padding-top: 120px;
+}
+
+.download-block .download-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.download-content .download-title {
+    font-family: "Mulish-Bold";
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.download-content .download-separator-line {
+    background-color: #000000;
+    border-radius: 6px;
+    height: 2px;
+    width: 56px;
+    margin-top: 26px;
+}
+
+.download-content .download-description {
+    font-family: "Mulish-Light";
+    color: #7c7987;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.download-content .download-button-text {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.download-block .download-image {
+    width: 700px;
+    height: auto;
+}

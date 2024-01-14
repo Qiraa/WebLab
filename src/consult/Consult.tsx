@@ -1,5 +1,5 @@
 import "./Consult.css"
-import "./Common.css"
+import "../Common.css"
 
 export default function Consult() {
     return (
@@ -12,7 +12,7 @@ export default function Consult() {
                 </div>
                 <button className="filled-button">Consult today</button>
             </div>
-            <img className="iconsult-image" src="consult.png"/>
+            <img className="consult-image" src="consult.png"/>
         </div>
     )
 }

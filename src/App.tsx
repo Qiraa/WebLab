@@ -3,14 +3,16 @@ import './App.css'
 import './fonts/Mulish/Mulish-Regular.ttf'
 import './fonts/Mulish/Mulish-Bold.ttf'
 import './fonts/Mulish/Mulish-Light.ttf'
+import './fonts/Mulish/Mulish-SemiBold.ttf'
 
-import { Comments, Comment }  from './Comments'
-import Consult from './Consult'
-import { Article, LatestArticles } from './LatestArticles'
-import LeadingProviders from './LeadingProviders'
-import Services, { Service } from './Services'
-import Download from './Download'
-import Header from './Header'
+import { Comments, Comment }  from './comments/Comments'
+import Consult from './consult/Consult'
+import { Article, LatestArticles } from './latest-articles/LatestArticles'
+import LeadingProviders from './providers/LeadingProviders'
+import Services, { Service } from './services/Services'
+import Download from './download/Download'
+import Header from './header/Header'
+import Footer from './footer/Footer'
 
 function App() {
   return (
@@ -124,6 +126,7 @@ function App() {
         ),
       ]
     }/>
+    <Footer/>
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./LatestArticles.css";
-import "./Common.css";
+import "../Common.css";
 
 const DEFAULT_ITEMS_COUNT = 3;
 

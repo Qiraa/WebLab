@@ -3,6 +3,9 @@
     flex-direction: column;
     text-align: start;
     align-items: center;
+    background-image: url("articles_background_decoration.svg"), url("common_decoration.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top 20%, left 8% top 15%;
 }
 
 .articles-block .articles-block-title {
@@ -14,6 +17,8 @@
     line-height: 48px;
     white-space: nowrap;
     align-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .articles-block .articles-separator-line {
@@ -23,6 +28,8 @@
     width: 56px;
     align-self: center;
     margin-top: 26px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .articles-block .articles-cards {
@@ -31,7 +38,8 @@
     column-gap: 5%;
     row-gap: 5%;
     margin-top: 72px;
-    margin-bottom: 64px;
+    margin-bottom: 100px;
+    width: 80%;
 }
 
 .articles-cards .article-card {
@@ -84,4 +92,8 @@
     flex-direction: row;
     gap: 16px;
     outline: none;
+}
+
+.article-read-more:hover {
+    text-decoration: underline;
 }

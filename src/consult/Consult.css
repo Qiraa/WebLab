@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 120px;
+    background-image: url("common_decoration.svg");
+    background-repeat: no-repeat;
+    background-position: left -3% top;
 }
 
 .consult-block .consult-content {
@@ -10,6 +13,8 @@
     flex-direction: column;
     text-align: start;
     align-items: flex-start;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .consult-block .consult-content .consult-title {

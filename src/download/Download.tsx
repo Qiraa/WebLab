@@ -1,5 +1,5 @@
 import "./Download.css"
-import "./Common.css"
+import "../Common.css"
 
 export default function Download() {
     return (
@@ -15,7 +15,7 @@ export default function Download() {
                 <button className="outlined-button">
                     <div className="download-button-text">
                         Download
-                        <img color="#FF0000" width="10px" src="arrow_down.svg"/>
+                        <img width="10px" src="arrow_down.svg"/>
                     </div>
                 </button>
             </div>

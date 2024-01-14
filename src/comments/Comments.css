@@ -1,9 +1,11 @@
 .comments-block {
     font-family: "Mulish-Regular";
+    background-image: url("common_decoration.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 30% left 13%;
 }
 
 .comments-block .comments-card {
-    background: linear-gradient(180deg, rgb(103, 195, 243) 0%, rgb(90, 152, 242) 100%);
     border-radius: 24px;
     padding-left: 120px;
     padding-right: 120px;
@@ -14,6 +16,17 @@
     align-items: stretch;
     justify-content: center;
     gap: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: 
+        url("common_decoration.svg"),
+        linear-gradient(
+            45deg,
+            rgb(103, 195, 243) 0%,
+            rgb(90, 152, 242) 100%
+        );
+    background-repeat: no-repeat, no-repeat;
+    background-position: right -5% top, center center;
 }
 
 .comments-card .comments-title {
@@ -39,6 +52,7 @@
     display: flex;
     flex-direction: row;
     gap: 10%;
+    margin-top: 64px;
     align-items: center;
     justify-content: space-between;
 }
@@ -96,15 +110,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
 }
 
 .comments-block .comments-arrow .comment-arrow-enabled {
     opacity: 1;
+    margin-left: 64px;
+    margin-right: 64px;
 }
 
 .comments-block .comments-arrow .comment-arrow-disabled {
     opacity: 0.5;
+    margin-left: 64px;
+    margin-right: 64px;
 }
 
 .comments-block .comment-point-unselected {
@@ -115,6 +132,8 @@
     display: inline-block;
     opacity: 0.5;
     transition: all 500ms;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .comments-block .comment-point-unselected:hover {
@@ -128,4 +147,6 @@
     border-radius: 50%;
     display: inline-block;
     opacity: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }

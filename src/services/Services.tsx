@@ -1,5 +1,5 @@
 import "./Services.css"
-import "./Common.css"
+import "../Common.css"
 
 export class Service {
     imagePath: string;

@@ -1,0 +1,39 @@
+.consult-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    background-image: url("common_decoration.svg");
+    background-repeat: no-repeat;
+    background-position: left -3% top;
+}
+
+.consult-block .consult-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.consult-block .consult-content .consult-title {
+    font-family: "Mulish-Bold";
+    color: #000000;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.consult-block .consult-content .consult-description {
+    font-family: "Mulish-Light";
+    color: #7c7987;
+    font-size: 21px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.consult-block .consult-image {
+    width: 700px;
+    height: auto;
+}

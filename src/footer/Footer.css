@@ -1,0 +1,61 @@
+.footer {
+    width: 100%;
+    background-image: url("common_decoration.svg");
+    background-repeat: no-repeat;
+    background-position: right 5% top;
+}
+
+.footer .footer-row {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    text-align: start;
+    background-image: 
+        url("common_decoration.svg"),
+        linear-gradient(180deg, rgb(103, 195, 243) 0%, rgb(90, 152, 242) 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -2% bottom -5%, center center;
+}
+
+.footer-row .footer-main-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-main-column .footer-main-text {
+    color: #ffffff;
+    font-family: "Mulish-Light";
+    font-size: 18px;
+    margin-top: 32px;
+    line-height: 100%;
+}
+
+.footer-row .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.footer-column .footer-title {
+    color: #ffffff;
+    font-family: "Mulish-Bold";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-column .footer-link {
+    color: #ffffff;
+    font-family: "Mulish-Light";
+    font-size: 18px;
+}
+
+.footer-column .footer-link:hover {
+    text-decoration: underline;
+}

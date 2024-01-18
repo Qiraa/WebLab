@@ -1,0 +1,84 @@
+.services-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("services_background_decoration.svg"), url("common_decoration.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right 8% top 55%;
+}
+
+.services-block .services-block-title {
+    font-family: "Mulish-Bold";
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.services-block .services-separator-line {
+    background-color: #000000;
+    border-radius: 6px;
+    height: 2px;
+    width: 56px;
+    margin-top: 26px;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.services-block .services-block-description {
+    font-family: "Mulish-Light";
+    color: #7c7987;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.services-block .services-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 5%;
+    margin-top: 80px;
+    margin-bottom: 72px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.services-cards .service-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    box-shadow: var(--drop-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.service-card .service-image {
+    width: 90px;
+    height: 90px;
+    float: initial;
+}
+
+.service-card .service-title {
+    font-family: "Mulish-Bold";
+    font-size: 24px;
+    margin-top: 16px;
+    font-weight: bold;
+    text-align: sta;
+}
+
+.service-card .service-description {
+    font-family: "Mulish-Light";
+    color: #7c7987;
+    font-size: 16px;
+    margin-top: 16px;
+}
